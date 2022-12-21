@@ -1,12 +1,12 @@
 import React, { Component } from "react";
-import Timer from "./components/Timer/Timer";
+import ShowTime from "./components/ShowTime/ShowTime";
 
 class App extends Component {
   render() {
     return (
       <div >
       
-        <Timer />
+        <ShowTime />
       </div>
     );
   }
