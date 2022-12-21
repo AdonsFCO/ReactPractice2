@@ -4,10 +4,10 @@ import Timer from "./components/Timer/Timer";
 class App extends Component {
   render() {
     return (
-      <>
-        <h1>Current Time</h1>
+      <div >
+      
         <Timer />
-      </>
+      </div>
     );
   }
 }

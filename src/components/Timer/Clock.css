@@ -1,0 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:ital@1&family=Oswald:wght@700&display=swap');
+.clock
+{
+   
+    text-align:center;
+    font-family: 'Noto Serif', serif;
+    font-size: large;
+    color:blue;
+    font-weight: bolder;
+}
+h1,h2,h3,h3,h4,h5{
+    font-family: 'Oswald', sans-serif;
+    text-align: center;
+
+}

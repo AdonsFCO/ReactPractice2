@@ -49,8 +49,11 @@ class Timer extends Component {
 
   render() {
     return (
-      <div className="timer">
-        <Clock currentTime={this.state.date + this.state.currentTime}/>
+      <div className="timer card">
+        <Clock currentTime={`
+         ${this.state.date}
+         ${this.state.currentTime}`
+         }/>
         <Button stopTime={this.componentWillUnmount} />
       </div>
     );

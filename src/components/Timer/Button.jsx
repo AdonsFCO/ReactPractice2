@@ -1,7 +1,10 @@
+
+import 'bootstrap/dist/css/bootstrap.min.css';
+
 const Button = ({stopTime}) => {
 
 
-    return(<button onClick={stopTime}>STOP</button>)
+    return(<button className="btn btn-outline-primary"onClick={stopTime}>STOP</button>)
 
 
 

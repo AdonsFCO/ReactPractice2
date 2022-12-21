@@ -1,7 +1,11 @@
-const clock = ({currentTime}) =>{
+import "./Clock.css";
+const clock = ({ currentTime }) => {
+  return (
+    <>
+      <h2>This is the current time:</h2>
+      <p className="clock">{currentTime}</p>
+    </>
+  );
+};
 
-    return(<h1>{currentTime}</h1>)
-
-}
-
-export default clock
+export default clock;
