@@ -1,14 +1,15 @@
-import React, { Component } from 'react';
+import React, { Component } from "react";
+import Timer from "./components/Timer/Timer";
 
-
-class App extends Component{
-
-render()
-{
-  return (<h1>Test of test</h1>)
+class App extends Component {
+  render() {
+    return (
+      <>
+        <h1>Current Time</h1>
+        <Timer />
+      </>
+    );
+  }
 }
-  
-}
-
 
 export default App;
