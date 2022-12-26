@@ -9,7 +9,8 @@ class Timer extends Component {
     this.state = {
       timerRunning: true,
       currentTime: this.getTime(),
-      date: ""
+      date: "",
+      button: "STOP"
     };
     this.startTimer = this.startTimer.bind(this);
     this.componentWillUnmount = this.componentWillUnmount.bind(this);
@@ -32,8 +33,13 @@ class Timer extends Component {
     if (this.state.timerRunning === true) {
       clearInterval(this.timer);
       this.setState({ timerRunning: false });
+      this.setState({button : "START"})
+      
+      
     } else {
       this.startTimer();
+      this.setState({button : "STOP"})
+   
     }
   }
 
@@ -54,7 +60,9 @@ class Timer extends Component {
          ${this.state.date}
          ${this.state.currentTime}`
          }/>
-        <Button stopTime={this.componentWillUnmount} />
+        <Button stopTime={this.componentWillUnmount} >
+          {this.state.button}
+        </Button>
       </div>
     );
   }
